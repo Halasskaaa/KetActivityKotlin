@@ -79,6 +79,12 @@ class ProfileActivity : ComponentActivity() {
                             text = if(sotetMod) "Aktív" else "Inaktív",
                             style = MaterialTheme.typography.titleLarge
                         )
+                        Button(
+                            onClick = {
+                                finish()
+                            },
+                            modifier = Modifier.fillMaxWidth()
+                        ) { Text("Vissza") }
                     }
                 }
             }
